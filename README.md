@@ -1,6 +1,6 @@
-# PLANT-AI [Recognition of Plant Diseases by Leaf Image Classification.]
+## PLANT-AI [Recognition of Plant Diseases by Leaf Image Classification]
 ----------
- <!-- <img src="./Test_Images/demo.jpeg" alt="index1"/> -->
+ <img src="./Assets/batch.png" alt="batch of image"/>
 ----------
 
 ## Description
@@ -11,7 +11,7 @@ food security. The traditional method of disease detection has been to use manua
 can be time consuming and costly, proving infeasible for millions of small and medium sized farms around the world.
 
    This project is an approach to the development of plant disease recognition model, based on leaf image classification, by the
-use of deep convolutional networks. The developed model is able to recognize 38 different types of plant diseases out of healthy leaves,of 12 different plants with the ability to distinguish plant leaves from their surroundings.
+use of deep convolutional networks. The developed model is able to recognize 38 different types of plant diseases out of healthy leaves,of 14 different plants with the ability to distinguish plant leaves from their surroundings.
 
 
 ## Leaf Image Classification
