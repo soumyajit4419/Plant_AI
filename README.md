@@ -26,17 +26,17 @@ use of deep convolutional networks. The developed model is able to recognize 38 
    - I have used pytorch for building the model.
    - I used two models:-
       1. The CNN model architecture consists of CNN Layer, Max Pooling, Flatten a Linear Layers.
-      2. Using Transfer learning VGG16 Acrhitecture.
+      2. Using Transfer learning VGG16 Architecture.
+      3. Using Transfer learning resnet34 Architecture.
 
 3. Training
 
-   The model was trained  by  using variants of above layers mentioned in model building and by varying hyperparameters. The best model was able to achieve 90.1% of test accuracy.
+   The model was trained  by  using variants of above layers mentioned in model building and by varying hyperparameters. The best model was able to achieve 91.1% of test accuracy.
 
 4. Testing
 
-   The model was tested with sample images. It can be seen below:
-
-
+   The model was tested on total 17572 images of 38 classes.<br/>
+   The model used for prediction on sample images. It can be seen below:
    <!-- <img src="" alt="index1" height="300px"/> -->
    <div align="center">
    <img src="./Assets/out1.png" alt="index2" height="300px" width="500"/>
@@ -45,18 +45,16 @@ use of deep convolutional networks. The developed model is able to recognize 38 
 
 ## Details about the model
 
-### The model will be able to detect `38` types of `diseases` of `14 Unique plants`:-
-
-#### Unique Plants: ['Pepper,', 'Grape', 'Tomato', 'Squash', 'Corn', 'Apple', 'Potato', 'Raspberry', 'Strawberry', 'Cherry', 'Soybean', 'Blueberry', 'Orange', 'Peach']
-
-####  Diseases: ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy', 'Blueberry___healthy', 'Cherry_(including_sour)___Powdery_mildew', 'Cherry_(including_sour)___healthy', 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot', 'Corn_(maize)___Common_rust_', 'Corn_(maize)___Northern_Leaf_Blight', 'Corn_(maize)___healthy', 'Grape___Black_rot', 'Grape___Esca_(Black_Measles)', 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)', 'Grape___healthy', 'Orange___Haunglongbing_(Citrus_greening)', 'Peach___Bacterial_spot', 'Peach___healthy', 'Pepper,_bell___Bacterial_spot', 'Pepper,_bell___healthy', 'Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy', 'Raspberry___healthy', 'Soybean___healthy', 'Squash___Powdery_mildew', 'Strawberry___Leaf_scorch', 'Strawberry___healthy', 'Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
+### The model will be able to detect `38` types of `diseases` of `14 Unique plants`
+- The deatil list of plants and diseases can be seen in  [List](Src) 
 
 ## Usage:
 
-### For Model Building and Training Code
-
+### Code For Model Building and Training  
 Refer to the notebook [Code](Src) <br/> 
-I have trained an classifier model and put its trained weights at [Models](Models)
+
+### All the trained models
+Trained weights at [Models](Models)
 
 
 ## Further Work:
