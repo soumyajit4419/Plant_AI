@@ -1,14 +1,16 @@
-## Code Explanation
+
+### Details About the code
+
+* The .ipynb file contains the complete code from loading the images to training,evaluation and prediction of the model.<br/>
+* The code has has been written using PyTorch framework.
 
 
+### List of Plants and Diseases that the model can detect
 
+#### Unique Plants: 
+ Pepper, Grape, Tomato, Squash, Corn, Apple, Potato, Raspberry, Strawberry, Cherry, Soybean, Blueberry, Orange, Peach
 
-## List of plants and Diseases that the model can classify:-
-
-### Unique Plants: 
-#### 'Pepper', 'Grape', 'Tomato', 'Squash', 'Corn', 'Apple', 'Potato', 'Raspberry', 'Strawberry', 'Cherry', 'Soybean', 'Blueberry', 'Orange', 'Peach'
-
-### Diseases:
+#### List of Diseases:
 * 'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy'
 * 'Blueberry___healthy'
 * 'Cherry_(including_sour)___Powdery_mildew', 'Cherry_(including_sour)___healthy' 

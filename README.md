@@ -20,7 +20,7 @@ use of deep convolutional networks. The developed model is able to recognize 38 
 
 1. Data gathering 
 
-   The dataset taken was **"New Plant Diseases Dataset"**. It can be downloaded through the link " https://www.kaggle.com/vipoooool/new-plant-diseases-dataset". It is an Image dataset containing different healthy and unhealthy crop leaves.
+   The dataset taken was **"New Plant Diseases Dataset"**. It can be downloaded through the link " https://www.kaggle.com/vipoooool/new-plant-diseases-dataset". It is an Image dataset containing images of different healthy and unhealthy crop leaves.
 
 2. Model building
    - I have used pytorch for building the model.
@@ -48,7 +48,7 @@ use of deep convolutional networks. The developed model is able to recognize 38 
 
   All the version with code can be seen in `jovian.ml` (https://jovian.ml/soumyajit4419/course-project-plant-disease-classification) 
 <br/>
-
+  
 ## Details about the model
 
 ### The model will be able to detect `38` types of `diseases` of `14 Unique plants`
