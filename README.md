@@ -72,3 +72,7 @@ information on crop health and disease detection.This could facilitate the contr
 
 ## License
 This project is Licensed under `MIT` 
+
+
+## Explanation
+`To understand the code :` You  can find the complete explanation to the code in [Article](https://medium.com/@soumyajit4419/plant-ai-c8fc95ed90e6?source=friends_link&sk=4707825cbaefa2dcaaa92d0e3ed5de01)
