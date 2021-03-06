@@ -1,0 +1,1196 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  letter-spacing: 1px;
+  font-family: monospace;
+}
+
+body a {
+  outline: none;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  text-decoration: none;
+  cursor: pointer !important;
+}
+button,
+.btn {
+  cursor: pointer !important;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+body a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"] {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  letter-spacing: 1px;
+  font-family: "Mada", sans-serif;
+}
+
+select,
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="button"],
+input[type="submit"],
+textarea {
+  font-family: "Mada", sans-serif;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+/*-- //Reset-Code --*/
+
+.title {
+  font-size: 30px;
+  color: #703fa3;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h5.card-title a,
+h5.card-title {
+  color: #000;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.blog_w3icon span {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 12px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+.collection-w3layouts h4,
+.ser-sevice-grid h4,
+.clients-txt-ile h4,
+.contact-list-grid h4,
+.blog-left-sub h4 a,
+.comments-grid-right h4,
+.single-title h4 {
+  font-size: 25px;
+  color: #6e419d;
+  font-weight: bold;
+}
+
+.about-grid-title p,
+.about-para-txt p,
+.collection-w3layouts p,
+.ser-sevice-grid p,
+.clients-color-ile p,
+.contact-list-grid p a,
+.contact-list-grid p,
+.blog-left-sub p,
+.blog-image p,
+.blog-date-time ul li a,
+.single-title p,
+.single-title ul li,
+.single-title ul li a {
+  font-size: 14px;
+  color: #4c4c4c;
+  line-height: 25px;
+}
+
+/* header */
+
+/* navigation */
+
+/* CSS Document */
+
+.toggle-2,
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+
+/* Giving a background-color to the nav container. */
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+#logo a {
+  float: left;
+  display: initial;
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 0;
+}
+
+/* Since we'll have the "ul li" "float:left"
+* we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+* and adding "position:reltive" */
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+  margin: 0px;
+  float: left;
+}
+
+/* Styling the links */
+
+nav ul li a {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+  background: transparent;
+  padding: 7px 20px;
+  display: inline-block;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+nav ul li ul li:hover {
+  background: #000;
+}
+
+.menu li .drop-text:hover {
+  color: #fff;
+  border: none;
+}
+
+/* Background color change on Hover */
+
+/*.menu li.active a,.menu li a:hover{border-bottom: 1px solid #d4d4d4;}*/
+
+.menu li a:hover {
+  opacity: 0.8;
+  color: #fff;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+/* Hide Dropdowns by Default
+* and giving it a position of absolute */
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 33px;
+  background: #000;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: -1px 1px 5px black;
+}
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul li a {
+  color: #fff;
+  padding: 5px 10px;
+  display: block;
+  background: transparent;
+}
+
+/* Second, Third and more Tiers	
+* We move the 2nd and 3rd etc tier dropdowns to the left
+* by the amount of the width of the first tier.
+*/
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+
+li > a:only-child:after {
+  content: "";
+}
+
+a.reqe-button {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media (max-width: 800px) {
+  nav a {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  nav {
+    margin: 0;
+  }
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    padding: 6px 17px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    float: right;
+    background-color: #fd5c63;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .menu .toggle {
+    float: none;
+    text-align: center;
+    margin: auto;
+    max-width: 138px;
+    padding: 10px 18px;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  .menu .toggle:hover {
+    color: #000;
+    opacity: 0.8;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  .toggle:hover {
+    color: #000;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  label.toggle.toogle-2 {
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #000;
+  }
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^="drop"]:checked + ul {
+    display: block;
+    background: #fd5c63;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+  }
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+  }
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: transparent;
+  }
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 15px;
+  }
+  /* 
+nav ul li ul li .toggle,
+nav ul ul a {
+background-color: #212121;
+} */
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+  /* Hide menus on hover */
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+  nav a {
+    color: #000;
+    font-size: 15px;
+  }
+  .menu li.active a,
+  .menu li a:hover {
+    background: transparent;
+  }
+}
+
+@media all and (max-width: 568px) {
+  nav a,
+  .menu .toggle,
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  nav a,
+  .menu .toggle,
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    font-size: 13px;
+  }
+}
+
+/*-- dropdown --*/
+
+/* banner */
+
+.main-top {
+  background: linear-gradient(rgba(46, 46, 46, 0.418), rgba(27, 27, 27, 0.349)),
+    url(../images/b7.jpg) no-repeat bottom;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  min-height: 800px;
+}
+
+.headder-top {
+  position: absolute;
+  width: 100%;
+  padding: 1em 3em;
+  box-shadow: 0 0 4px #8f8f8f;
+}
+
+.style-banner {
+  padding-top: 25em;
+}
+
+.style-banner h5 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.two-demo-button p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-banner h4 {
+  color: #fff;
+  font-size: 2.7em;
+  font-weight: 700;
+}
+
+.view-buttn a {
+  font-size: 19px;
+  color: #fd5c63;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  letter-spacing: 1px;
+  outline: none;
+  font-weight: 700;
+  border-radius: 0px;
+  /* background-color: #fd5c63; */
+  padding: 5px 3px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.view-buttn a:hover,
+button.btn1:hover,
+.sent-butnn:hover {
+  opacity: 0.8;
+}
+
+/* //banner */
+
+/* about */
+
+.about-oil-w3layouts {
+  padding: 3em 1em;
+  color: #000;
+  background: #efefef;
+  box-shadow: 0px 0px 10px #cecece;
+}
+
+.about-icon span {
+  font-size: 40px;
+  color: #643e88;
+}
+
+.about-fashion-two img,
+.about-fashion-one img {
+  box-shadow: -9px 10px 3px #fd5c63;
+  box-shadow: -5px 2px 9px #afafaf;
+}
+
+/*--// about-- */
+
+/*-- footer-- */
+
+footer {
+  background: #000;
+}
+
+.footer-w3layouts-head h2 a {
+  font-size: 29px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.bottem-wthree-footer p {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.bottem-wthree-footer p a {
+  color: #fd5c63;
+}
+
+a.move-top {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+}
+
+/*--//footer-- */
+
+/*--responsive--*/
+@media (max-width: 1440px) {
+  .main-top {
+    min-height: 750px;
+  }
+  .style-banner {
+    padding-top: 25em;
+  }
+  .main-banner h4 {
+    font-size: 2.4em;
+  }
+  .style-banner h5 {
+    font-size: 31px;
+  }
+  #logo a {
+    font-size: 32px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .collection-w3layouts h4,
+  .ser-sevice-grid h4,
+  .clients-txt-ile h4,
+  .contact-list-grid h4,
+  .blog-left-sub h4 a,
+  .comments-grid-right h4,
+  .single-title h4 {
+    font-size: 23px;
+  }
+  .fashion-collet-txt h5 {
+    font-size: 3.2em;
+  }
+  .about-icon span {
+    font-size: 38px;
+  }
+  .inner_page-banner {
+    min-height: 275px;
+  }
+  .number-w3three-info h5 {
+    font-size: 41px;
+  }
+  .newsletter input[type="email"] {
+    padding: 11px 15px;
+  }
+  button.btn1 {
+    padding: 9.5px 0;
+  }
+  .address_mail_footer_grids iframe {
+    height: 38em;
+  }
+}
+
+@media (max-width: 1366px) {
+  .title span {
+    letter-spacing: 4px;
+  }
+  .counter-number {
+    padding: 6em 2em;
+  }
+  .ser-fashion-grid {
+    padding: 1.3em 1.5em;
+  }
+  .social-icons ul li a span {
+    font-size: 26px;
+  }
+  .footer-w3layouts-head h2 a {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 1280px) {
+  nav ul li a {
+    padding: 7px 23px;
+  }
+  .headder-top {
+    padding: 1em 1.7em;
+  }
+  .clients-color-ile.text-center {
+    padding: 1.7em 1.2em;
+  }
+  .inner_page-banner {
+    min-height: 264px;
+  }
+  button.btn1 {
+    width: 22%;
+  }
+  .contact-forms textarea {
+    height: 9em;
+  }
+}
+
+@media (max-width: 1080px) {
+  .two-demo-button p {
+    font-size: 15px !important;
+  }
+  .main-top {
+    min-height: 600px;
+  }
+  .main-banner h4 {
+    font-size: 2.2em !important;
+  }
+  .style-banner h5 {
+    font-size: 29px !important;
+  }
+  .view-buttn a {
+    font-size: 18px !important;
+  }
+  .style-banner {
+    padding-top: 18em;
+  }
+  .title {
+    font-size: 39px !important;
+  }
+  .fashion-collet-txt h5 {
+    font-size: 2.8em !important;
+  }
+  .about-icon span {
+    font-size: 36px !important;
+  }
+  .newsletter {
+    padding: 4em 8em;
+  }
+}
+
+@media (max-width: 1050px) {
+  #logo a {
+    font-size: 30px !important;
+  }
+  .fashion-collet-txt h5 {
+    font-size: 2.6em !important;
+  }
+  .fashion-collet-txt h6,
+  .newsletter h4 {
+    font-size: 32px !important;
+  }
+  .number-w3three-info h5 {
+    font-size: 39px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headder-top {
+    padding: 0.7em 1.5em;
+  }
+  .collection-w3layouts {
+    padding-top: 2.5em;
+  }
+  .collection-w3layouts h4,
+  .ser-sevice-grid h4,
+  .clients-txt-ile h4,
+  .contact-list-grid h4,
+  .blog-left-sub h4 a,
+  .comments-grid-right h4,
+  .single-title h4 {
+    font-size: 22px !important;
+  }
+  .footer-w3layouts-head h2 a {
+    font-size: 25px !important;
+  }
+  .newsletter {
+    padding: 3.5em 8em;
+  }
+  button.btn1 {
+    width: 25%;
+  }
+}
+
+@media (max-width: 991px) {
+  .title span {
+    font-size: 18px !important;
+  }
+  .view-buttn a {
+    font-size: 17px !important;
+  }
+  .fashion-collet-txt h5 {
+    font-size: 2.4em !important;
+  }
+  .clients-ile-img img {
+    top: -20px;
+    width: 17%;
+  }
+  .social-icons ul li a span {
+    font-size: 23px !important;
+  }
+  .number-w3three-info h5 {
+    font-size: 34px !important;
+  }
+  .service-grid-wthree:nth-child(3) {
+    margin-top: 17px;
+  }
+  .newsletter {
+    padding: 3.5em 6em;
+  }
+  .address_mail_footer_grids iframe {
+    height: 36em;
+  }
+  .about-two-grids {
+    margin-top: 1.5em;
+  }
+  .clients-ile-img img {
+    top: -21px;
+    width: 17%;
+    right: 49px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav ul li a {
+    padding: 5px 20px;
+  }
+  .main-top {
+    min-height: 550px;
+  }
+  .style-banner {
+    padding-top: 12em;
+  }
+  .title {
+    font-size: 37px !important;
+  }
+  .counter-number {
+    padding: 5em 1.5em;
+  }
+  .fashion-collet-txt h5 {
+    font-size: 2.2em !important;
+  }
+  .fashion-collet-txt h6,
+  .newsletter h4 {
+    font-size: 28px !important;
+  }
+  .social-icons ul li a span {
+    margin: 0px 19px;
+  }
+  .about-icon span {
+    font-size: 34px !important;
+  }
+  button.btn1 {
+    width: 28%;
+  }
+}
+
+@media (max-width: 800px) {
+  .title span {
+    letter-spacing: 3px;
+  }
+  .main-banner h4 {
+    font-size: 2em !important;
+  }
+  .style-banner h5 {
+    font-size: 27px !important;
+  }
+  .about-icon span {
+    font-size: 31px !important;
+  }
+  .inner_page-banner {
+    min-height: 235px;
+  }
+  .number-w3three-info h5 {
+    font-size: 30px !important;
+  }
+  .newsletter {
+    padding: 3em 6em;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul li a {
+    padding: 5px 16px;
+  }
+  .counter-number {
+    padding: 4em 1.5em;
+  }
+  #logo a {
+    font-size: 28px !important;
+  }
+  .social-icons ul li a span {
+    font-size: 21px !important;
+  }
+  .number-w3three-info h6 {
+    font-size: 15px !important;
+  }
+  .newsletter input[type="email"] {
+    padding: 9px 15px;
+  }
+  button.btn1 {
+    padding: 6.5px 0;
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .two-demo-button p {
+    width: 96%;
+    font-size: 14px !important;
+  }
+  .collection-w3layouts:nth-child(1) {
+    margin-bottom: 29px;
+  }
+  .collection-w3layouts {
+    padding-top: 2em;
+  }
+  .fashion-collet-txt h5 {
+    font-size: 2em !important;
+  }
+  .social-icons ul li a span {
+    margin: 0px 16px;
+  }
+  .fashion-collet-txt h6,
+  .newsletter h4 {
+    font-size: 26px !important;
+  }
+  .about-imgs-txt:nth-child(2),
+  .contact-form-txt {
+    margin-top: 50px;
+  }
+  .number-w3three-info:nth-child(3),
+  .number-w3three-info:nth-child(4) {
+    margin-top: 20px;
+  }
+  .newsletter {
+    padding: 2.5em 4em;
+  }
+  button.btn1 {
+    width: 32%;
+  }
+  .contact-forms input,
+  .contact-forms textarea {
+    padding: 0.7em 0.7em;
+  }
+  .address_mail_footer_grids iframe {
+    height: 26em;
+  }
+}
+
+@media (max-width: 736px) {
+  .style-banner h5 {
+    font-size: 25px !important;
+  }
+  .about-icon span {
+    font-size: 29px !important;
+  }
+  .clients-color-ile.text-center {
+    padding: 1.5em 1.2em;
+  }
+  .collection-w3layouts h4,
+  .ser-sevice-grid h4,
+  .clients-txt-ile h4,
+  .contact-list-grid h4,
+  .blog-left-sub h4 a,
+  .comments-grid-right h4,
+  .single-title h4 {
+    font-size: 21px !important;
+  }
+  button.btn1 {
+    width: 34%;
+  }
+}
+
+@media (max-width: 667px) {
+  .main-top {
+    min-height: 514px;
+  }
+  .style-banner {
+    padding-top: 11em;
+  }
+  .title {
+    font-size: 35px !important;
+  }
+  .view-buttn a {
+    font-size: 16px !important;
+  }
+  .number-w3three-info h5 {
+    font-size: 27px !important;
+  }
+  .contact-forms textarea {
+    height: 8em;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-banner h4 {
+    font-size: 1.8em !important;
+  }
+  .title span {
+    font-size: 17px !important;
+  }
+  .fashion-collet-txt h6,
+  .newsletter h4 {
+    font-size: 24px !important;
+  }
+  .social-icons ul li a span {
+    font-size: 19px !important;
+  }
+  .newsletter {
+    padding: 2em 3em;
+  }
+  .address_mail_footer_grids iframe {
+    height: 23em;
+  }
+}
+
+@media (max-width: 600px) {
+  .collection-w3layouts {
+    padding-top: 1.5em;
+  }
+  .adv-text {
+    min-height: 245px;
+  }
+  .about-icon span {
+    font-size: 27px !important;
+  }
+  .sent-butnn {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 568px) {
+  .main-top {
+    min-height: 454px;
+  }
+  .style-banner {
+    padding-top: 10.5em;
+  }
+  .main-banner h4 {
+    font-size: 1.6em !important;
+  }
+  .style-banner h5 {
+    font-size: 22px !important;
+  }
+  .headder-top {
+    padding: 0.7em 1.2em;
+  }
+  .about-two-grids {
+    margin-top: 24px;
+  }
+  .counter-number {
+    padding: 3em 1.5em;
+  }
+  .service-grid-wthree:nth-child(2) {
+    margin-top: 20px;
+  }
+  .cilent-item {
+    margin-top: 40px;
+  }
+  .clients-ile-img img {
+    top: -33px;
+    width: 13%;
+  }
+  .number-w3three-info h5 {
+    font-size: 25px !important;
+  }
+  .inner_page-banner {
+    min-height: 225px;
+  }
+  .gallery-img-grid:nth-child(2),
+  .gallery-img-grid:nth-child(3) {
+    margin-top: 20px;
+  }
+  .single-title,
+  .contact-list-grid:nth-child(2) {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .two-demo-button p {
+    padding-right: 1em;
+  }
+  .title {
+    font-size: 34px !important;
+    letter-spacing: 1px;
+  }
+  .title span {
+    font-size: 16px !important;
+    letter-spacing: 2px;
+  }
+  .view-buttn a {
+    font-size: 15px !important;
+  }
+  .fashion-collet-txt h6,
+  .newsletter h4 {
+    font-size: 22px !important;
+  }
+  .bottem-wthree-footer p {
+    letter-spacing: 1px;
+  }
+  .newsletter {
+    padding: 2em 2em;
+  }
+  button.btn1 {
+    width: 37%;
+  }
+  .address_mail_footer_grids iframe {
+    height: 20em;
+  }
+}
+
+@media (max-width: 440px) {
+  #logo a {
+    font-size: 27px !important;
+  }
+  .style-banner {
+    padding-top: 11em;
+  }
+  .fashion-collet-txt h5 {
+    font-size: 1.8em !important;
+  }
+  .clients-ile-img img {
+    top: -26px;
+  }
+  .bottem-wthree-footer p {
+    line-height: 28px;
+  }
+  button.btn1 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 414px) {
+  .main-top {
+    min-height: 420px;
+  }
+  .style-banner {
+    padding-top: 8.5em;
+  }
+  .title {
+    font-size: 32px !important;
+  }
+  .ser-fashion-grid {
+    padding: 1em 1em;
+  }
+  .clients-ile-img img {
+    top: -21px;
+  }
+  .number-w3three-info h5 {
+    font-size: 23px !important;
+  }
+  .newsletter {
+    padding: 1.5em 1.5em;
+  }
+}
+
+@media (max-width: 384px) {
+  .main-banner h4 {
+    font-size: 1.4em !important;
+  }
+  .style-banner h5 {
+    font-size: 21px !important;
+  }
+  .counter-number {
+    padding: 2em 1.5em;
+  }
+  .about-icon span {
+    font-size: 25px !important;
+  }
+  .collection-w3layouts h4,
+  .ser-sevice-grid h4,
+  .clients-txt-ile h4,
+  .contact-list-grid h4,
+  .blog-left-sub h4 a,
+  .comments-grid-right h4,
+  .single-title h4 {
+    font-size: 20px !important;
+  }
+  .clients-ile-img img {
+    width: 15%;
+  }
+  button.btn1 {
+    width: 43%;
+  }
+}
+
+@media (max-width: 375px) {
+  .fashion-collet-txt h5 {
+    font-size: 1.6em !important;
+  }
+  .cilent-item {
+    margin-top: 34px;
+  }
+  .social-icons ul li a span {
+    margin: 0px 13px;
+  }
+  .footer-w3layouts-head h2 a {
+    font-size: 23px !important;
+  }
+  .number-w3three-info h5 {
+    font-size: 22px !important;
+  }
+  .social-icons ul li a span {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .style-banner {
+    padding-top: 8em;
+  }
+  .title {
+    font-size: 30px !important;
+  }
+  .counter-number {
+    padding: 2em 1em;
+  }
+  .clients-ile-img img {
+    width: 18%;
+  }
+  .newsletter input[type="email"] {
+    width: 100%;
+  }
+}
