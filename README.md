@@ -2,7 +2,7 @@
 
 ## PLANT-AI [Recognition of Plant Diseases by Leaf Image Classification]
 
-### <a href="https://plant49-ai.herokuapp.com/" target="_blank">https://plant-ai.herokuapp.com/</a>
+### <a href="https://plant49-ai.herokuapp.com/" target="_blank">https://plant49-ai.herokuapp.com/</a>
 
 ## <img src="./Assets/web.gif" alt="demo"/>
 
@@ -47,8 +47,8 @@ This process for building a model which can detect the disease assocaited with t
    The model used for prediction on sample images. It can be seen below:
    <!-- <img src="" alt="index1" height="300px"/> -->
    <div align="center">
-   <img src="./Assets/out1.png" alt="index2" height="300px" width="500"/>
-   <img src="./Assets/out2.png" alt="index3" height="300px"  width="500"/>
+   <img src="./Assets/out1.png" alt="index2" height="300px" width="450"/>
+   <img src="./Assets/out2.png" alt="index3" height="300px"  width="450"/>
    </div>
 
 5. Various Model Architecture tried along with Learning Rate and Optimizer and various accuracy obtained with different models.
