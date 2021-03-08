@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Plant AI</title>
+  <!--meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--//meta tags ends here-->
+  <!--booststrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--//booststrap end-->
+
+  <!-- font-awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" />
+  <!-- //font-awesome icons -->
+
+  <!--stylesheets-->
+  <link href="../static/styles/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+
+</head>
+
+<body>
+  <div class="main-top" id="home">
+    <!-- header -->
+    <div class="headder-top">
+      <!-- nav -->
+      <nav>
+        <div id="logo">
+          <h1><a href="index.html">Plant-AI</a></h1>
+        </div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu mt-2">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#test">Detect</a></li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </div>
+    <!-- //header -->
+    <!-- banner -->
+    <div class="main-banner text-center">
+      <div class="container">
+        <div class="style-banner">
+          <h4 class="mb-2">Welcome To Plant AI</h4>
+          <h5>Offering Farming Solutions Worldwide
+          </h5>
+        </div>
+        <div class="two-demo-button mt-md-4 mt-3">
+          <p> Developing models for making disease detection easy and providing solutions for improving crop production
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- //banner -->
+
+  <!-- about -->
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row">
+        <div class="col-lg-6 about-imgs-txt pt-3">
+          <img src="../static/images/4.jpg" alt="news image" class="img-fluid" style="border-radius: 8px;">
+        </div>
+        <div class="col-lg-6 text-justify about-two-grids pt-3">
+          <h3 class="title text-center">About</h3>
+          <div class="about-para-txt">
+            <p>Food security for billions of people on earth requires minimizing crop damage by timely detection of
+              diseases.Developing methods for detection of plant diseases serves the dual purpose of increasing crop
+              yield and reducing pesticide use without knowing about the proper disease. Along with development of
+              better crop varieties, disease detection is thus paramount goal for achieving food security. The
+              traditional method of disease detection has been to use manual examination by either farmers or experts,
+              which can be time consuming and costly, proving infeasible for millions of small and medium sized farms
+              around the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //about -->
+
+  <!-- service -->
+  <section class="service pb-5 " id="features">
+    <div class="container ">
+      <h3 class="title text-center mb-3">Features</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+          <div class="ser-Agriculture-grid">
+            <div class="about-icon mb-md-4 mb-3">
+              <span class="fa fa-viadeo" aria-hidden="true"></span>
+            </div>
+            <div class="ser-sevice-grid">
+              <h4 class="pb-3">Easy Detection</h4>
+              <p>Just need to click and upload leaf image.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+          <div class="ser-Agriculture-grid">
+            <div class="about-icon mb-md-4 mb-3">
+              <span class="fa fa-pagelines" aria-hidden="true"></span>
+            </div>
+            <div class="ser-sevice-grid">
+              <h4 class="pb-3">Cause and Solution</h4>
+              <p>Provides the cause and solution of the identified diseases.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+          <div class="ser-Agriculture-grid">
+            <div class="about-icon mb-md-4 mb-3">
+              <span class="fa fa-leaf" aria-hidden="true"></span>
+            </div>
+            <div class="ser-sevice-grid">
+              <h4 class="pb-3">Large Plant Support</h4>
+              <p>Supports around 14 different types of plants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="blog_w3ls py-3 pb-5 pt-10" id="test">
+    <div class="container pb-xl-5 pb-lg-3">
+      <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3"> Test Your Plants</h3>
+      <div class="row" style="justify-content: center;">
+        <form action="{{ url_for('predict') }}" method="POST" enctype=multipart/form-data>
+          <div class="form-group text-center">
+            <label for="exampleFormControlFile1"><b>Input a file</b></label>
+            <input type="file" name="file" class="form-control-file" id="inputImage" onchange=previewImage(event)
+              required>
+            <br />
+            <button class="btn btn-primary" type="submit"> Predict </button>
+          </div>
+        </form>
+      </div>
+      <img id="output-image" class="rounded mx-auto d-block" />
+      <br />
+    </div>
+
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container pt-5 pb-3">
+      <div class="footer-w3layouts-head text-center">
+        <h2><a href="index.html">Plant-AI</a></h2>
+      </div>
+      <div class="bottem-wthree-footer text-center pt-md-4 pt-3">
+        <p>
+          All Rights Reserved | Design by Soumyajit
+        </p>
+      </div>
+      <!-- move icon -->
+      <div class="text-center">
+        <a href="#home" class="move-top text-center mt-3"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      </div>
+      <!--//move icon -->
+    </div>
+  </footer>
+  <!--//footer -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function previewImage(event) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var output = document.getElementById('output-image')
+        output.src = reader.result;
+      }
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  </script>
+</body>
+
+</html>

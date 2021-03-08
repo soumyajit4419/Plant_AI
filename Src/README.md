@@ -18,8 +18,8 @@
 * 'Grape___Black_rot', 'Grape___Esca_(Black_Measles)', 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)', 'Grape___healthy'
 * 'Orange___Haunglongbing_(Citrus_greening)'
 * 'Peach___Bacterial_spot', 'Peach___healthy' 
-* 'Pepper,_bell___Bacterial_spot'
-* 'Pepper,_bell___healthy', 'Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy'
+* 'Pepper,_bell___Bacterial_spot', 'Pepper,_bell___healthy', 
+* 'Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy'
 * 'Raspberry___healthy'
 * 'Soybean___healthy'
 * 'Squash___Powdery_mildew'
